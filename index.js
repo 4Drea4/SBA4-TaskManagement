@@ -52,24 +52,37 @@ addTask.addEventListener("click", (event) => {
   
     });}
     // adding a removed event listener button
-        erase.addEventListener("click", function(){
-                removeLastItem();
-    
-    });
+       let erase = document.getElementById("erase");
+       erase.addEventListener("click", function() {
+        removeLastItem();
+      });
+      
+        function removeLastItem(){
+            if (myTasks.length === 0) return;
+            myTasks.pop();
+            renderList();
+        }
 
-     //overdue
-    const today = new Date();
-    const myDate = deadline.value;
-    const dateConvert =new Date(dealine.value)
-    console.log(dateConvert);
+    //display time changes make it editable
+
+
+
+
+
+
+    //  // overdue implementation if I have time
+    // const today =  Date.now();//timestamp for time in moment
+    // const myDate = deadline.value;
+    // const dateConvert =new Date(deadline.value)
+    // console.log(dateConvert);
 
    
-     function overdue(task){
-         if (deadline.value < today )
-         console.log("Uh Oh did you mean to change the status of this task?"),
+    //  function overdue(task){
+    //      if (deadline.value < today ){
+    //      console.log("Uh Oh did you mean to change the status of this task?");
+    //      console.log(deadline.value);
     
-         else { 
-             return() }};
+    //     }  };
 
   
    
