@@ -59,15 +59,17 @@ addTask.addEventListener("click", (event) => {
 
      //overdue
     const today = new Date();
+    const myDate = deadline.value;
+    const dateConvert =new Date(dealine.value)
+    console.log(dateConvert);
 
    
      function overdue(task){
-         if(deadline.value < today );
-         console.log("Uh Oh did you mean to change the status of this task?");
-
-     else{ return();
-
- }};
+         if (deadline.value < today )
+         console.log("Uh Oh did you mean to change the status of this task?"),
+    
+         else { 
+             return() }};
 
   
    
