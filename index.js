@@ -19,10 +19,12 @@ const task = {
 
 //Create an onclick for the sumbit button here
 
-addTask.addEventListener("click", function )() {
-    let taskTitle = taskTitle.value;
+addTask.addEventListener("click", (event) => {
+    event.preventDefault();//stops the form
+    console.log("Testing 1")});// for testing to make sure the event listener to the button works
+    //let taskTitle = taskTitle.value;
    
-    if (taskTitle === "") {
+   /*  if (taskTitle === "") {
       alert("Please enter a task!");
       return;
     }
@@ -47,3 +49,4 @@ for (let i=0; i<4; i++ ) {
     newList.innerText
 }
 
+ */
