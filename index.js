@@ -36,20 +36,22 @@ addTask.addEventListener("click", (event) => {
     console.log(progressValue);
     console.log(categoryValue);
     console.log(deadlineValue);
+    console.log(myTasks);
+    console.log(task);
 }); 
 
   //helper function renderList create dom elements , append the children, and create the li and what not, then run the function
 
   function renderList(){
-    let ul = document.getElementById("list"); // get the <ul> element from the HTML
+    let ul = document.getElementById("list"); // get the ul div element from the HTML
       ul.innerHTML =""  ;//clear the list //
-      shoppingList.forEach(item => {//for each item in the shopping list array:
-      let li = document.createElement("li") ;          //push a new li
-       li.textContent = item;//set the <li>’s text to the current item
-      ul.appendChild(li);// append the <li> to the <ul>
+      myTasks.forEach(item => {//for each task in the myTask array:
+      let li = document.createElement("li") ;     //push a new li
+       li.textContent = item.title;//set the li’s text to the  
+      ul.appendChild(li);// append the li div to the ul div
   
     });}
-   
+//myTasks.forEach((task) => console.log(task));
 
 
   /* 
