@@ -50,13 +50,17 @@ addTask.addEventListener("click", (event) => {
        li.textContent = `${item.title}  ${item.progress} ${item.category} ${item.deadline}`; //set the li’s text to the values of the variables
       ul.appendChild(li);// append the li div to the ul div
   
+
+      //Problem: I need to add an active drop-down for each task to update the progress state
+      //Psuedo Code:
+
     });}
     // adding a removed event listener button
        let erase = document.getElementById("erase");
        erase.addEventListener("click", function() {
         removeLastItem();
       });
-      
+
         function removeLastItem(){
             if (myTasks.length === 0) return;
             myTasks.pop();
@@ -64,21 +68,21 @@ addTask.addEventListener("click", (event) => {
         }
 
     //display time changes make it editable
-
+        //inside my renderList store the status of progress
+        //assign the drop down to the ul progress status 
 
 
 
 
 
     //  // overdue implementation if I have time
+
     // const today =  Date.now();//timestamp for time in moment
     // const myDate = deadline.value;
     // const dateConvert =new Date(deadline.value)
     // console.log(dateConvert);
-
-   
     //  function overdue(task){
-    //      if (deadline.value < today ){
+    //     if (deadline.value < today ){
     //      console.log("Uh Oh did you mean to change the status of this task?");
     //      console.log(deadline.value);
     
