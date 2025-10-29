@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" aria-label="task management container">
+
+    <div class="title" id="headings">
+        <h1 class="page-title" aria-label="page title" id="heading-title">
+    Task Management App
+        </h1><br>
+      <!--   <h4>Become well rounded, and the version of yourself you aim to be by setting and completing goals</h4><br> -->
+</div>
+
+   
+<!-- Progress drop down -->
+    <form class="task-management-form" aria-busy="busy" aria-label="Enter your task">
+        <label for="task-name">Manage your tasks here!</label><br>
+        <span class="task-title"> Give it a name!</span>
+        <input type="text" id="task-name" name="task-title"> <br>
+
+   <!-- Progress drop down -->
+       <span class="status-text"> Update your task status</span> <select name="progress-state" id="progress" aria-label="Progress Status drop-down">
+            <option value="not-started">Not Started</option>
+            <option value="in-progress">In Progress</option>
+            <option value="finished">Finished</option>
+          </select><br> 
+
+       <!--  category drop down -->
+          <span class="category"> Choose a category</span>
+          <select name="category" id="category-options" aria-label="category dropdown">
+            <option value="home">Home</option>
+            <option value="Career">In Career</option>
+            <option value="Personal">Personal</option>  
+          </select><br>
+
+        <!--  Due Date -->
+          <span class="deadline"> When do you expect to be finished?</span><input type="date" id="task-due-date" name="taskDueDate"><br>
+
+             <!--  Task button-->
+          <button class="add-task" aria-label="add task to list" id="submitTask">Add Task</button>
+    </form>
+   </div>
+    
+</body>
+</html>

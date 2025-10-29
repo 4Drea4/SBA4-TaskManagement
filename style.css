@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1px;
+}
+.headings{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    border-radius: 10px;
+    font: 1rem;
+    align-items: center;
+    width:auto ;
+    height: 400px;
+    gap:1px;
+}
