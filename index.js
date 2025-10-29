@@ -47,7 +47,7 @@ addTask.addEventListener("click", (event) => {
       ul.innerHTML =""  ;//clear the list //
       myTasks.forEach(item => {//for each task in the myTask array:
       let li = document.createElement("li") ;     //push a new li
-       li.textContent = item.title;//set the li’s text to the  
+       li.textContent = `${item.title}  ${item.progress} ${item.category} ${item.deadline}`;            ;//set the li’s text to the  
       ul.appendChild(li);// append the li div to the ul div
   
     });}
