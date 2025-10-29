@@ -4,6 +4,7 @@ body{
     align-items: center;
     gap:1rem;
     flex-direction: column;
+    filter: drop-shadow(offset-x offset-y blur-radius color);
 }
 .headings{
     display: flex;
@@ -19,4 +20,10 @@ body{
     height: 400px;
     gap:1rem;
     flex-direction: column;
+    filter: drop-shadow(offset-x offset-y blur-radius color);
+}
+
+.li{
+    border-radius: 10px;
+    text-decoration: dashed;
 }

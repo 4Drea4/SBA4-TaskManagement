@@ -47,30 +47,27 @@ addTask.addEventListener("click", (event) => {
       ul.innerHTML =""  ;//clear the list //
       myTasks.forEach(item => {//for each task in the myTask array:
       let li = document.createElement("li") ;     //push a new li
-       li.textContent = `${item.title}  ${item.progress} ${item.category} ${item.deadline}`;            ;//set the li’s text to the  
+       li.textContent = `${item.title}  ${item.progress} ${item.category} ${item.deadline}`; //set the li’s text to the values of the variables
       ul.appendChild(li);// append the li div to the ul div
   
     });}
-//myTasks.forEach((task) => console.log(task));
+    // adding a removed event listener button
+        erase.addEventListener("click", function(){
+                removeLastItem();
+    
+    });
 
+     //overdue
+    const today = new Date();
 
-  /* 
+   
+     function overdue(task){
+         if(deadline.value < today );
+         console.log("Uh Oh did you mean to change the status of this task?");
 
-//function to create a new task item.
-function createTask() {
-    let task = document.getElementById('task-name').value;
-    if (!(typeof task === 'undefined') && task!=null && take.trim()!='') {  
-        createTask.push(task);
-    }
-    console.log(createTask);
-    document.getElementById('task-name').value = '';
-}
+     else{ return();
 
+ }};
 
-
-for (let i=0; i<4; i++ ) {
-    const newList = document.createElement('li');
-    newList.innerText
-}
-
- */
+  
+   
