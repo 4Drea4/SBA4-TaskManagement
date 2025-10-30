@@ -84,6 +84,7 @@ addTask.addEventListener("click", (event) => {
 
   myTasks[index].progress = newStatus; // update the data
   renderList();                        // refresh the list
+  renderCards();
 });
     // adding a removed event listener button for last task
        let erase = document.getElementById("erase");
@@ -97,8 +98,19 @@ addTask.addEventListener("click", (event) => {
             renderList();
         }
 
+    //making tasks go into the cards
+    const cards = document.getElementById("cards");
+    cards.innerHTML="";
+    myTasks.forEach(task =>{
+      const div= document.createElement("div");
+      div.className ="card";
+      div.textContent = `${task.title}  ${task.category}  ${task.deadline}`;
+      cards.appendChild(div);
+
+    });
+  
         //Search 
-        
+
 
 
 
