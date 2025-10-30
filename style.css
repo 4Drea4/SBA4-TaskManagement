@@ -68,6 +68,7 @@ body{
 .task-cards{
     display: grid;
     grid-template-columns: repeat(auto-fill);
+  
 }
 .card{
     background-color: #003100;

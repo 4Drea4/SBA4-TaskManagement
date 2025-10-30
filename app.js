@@ -73,7 +73,7 @@ addTask.addEventListener("click", (event) => {
       li.appendChild(select);
       ul.appendChild(li);// append the li div to the ul div
     });
-      renderCards();
+     // renderCards();
   }
       //function for rendering cards
 
@@ -123,13 +123,13 @@ addTask.addEventListener("click", (event) => {
             if (myTasks.length === 0) return;
             myTasks.pop();
             renderList();
-            renderCards();
+            // renderCards();
         }
         
     
   
         //Search 
-
+        
 
 
 
