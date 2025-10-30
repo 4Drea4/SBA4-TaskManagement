@@ -72,11 +72,6 @@ addTask.addEventListener("click", (event) => {
       li.appendChild(select);
       ul.appendChild(li);// append the li div to the ul div
 
-
-    
-  
-
-
     });}
 
   document.getElementById("list").addEventListener("change", (e) => {
@@ -102,7 +97,22 @@ addTask.addEventListener("click", (event) => {
             renderList();
         }
 
-   
+   // Filter function:  functionality to filter tasks by category or status
+        //Psuedocode :
+        //create a function for filter on the existing 
+        //create a button or search a button will need an event listener
+
+        filter.addEventListener('submit', (event) => {
+          event.preventDefault();
+          filterResults();
+      });
+
+
+         function filterResults(){
+         const 
+    }
+        
+
 
     //  playing around with the overdue implementation, if I have time, I will finish
 
