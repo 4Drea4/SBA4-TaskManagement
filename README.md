@@ -19,6 +19,12 @@ today was definitley harder than bootstrap.<br>
 *Tasks 1-3:*
 I am currently still working out how to change the active state of the progress portion of my task 3. I am having difficulties, I probably will just hang out in office hours at the next one.
 
+A few questions that I have to ask to help my understanding:
+
+1. Whats the difference between adding an event listener on a button vs adding to an element?
+2. I would like to be able to understand "e.target" and then how to and when to properly use it.
+3. How can I pull in the html element in js to have a change state/option for progress
+
 ##### Reflection Questions
 
 1. Reflection: Write a short reflection (100-200 words) included within the repository discussing:
@@ -29,7 +35,7 @@ MDN| W3schools| My peers| The Help queue | The office hours | Stack overflow| Tr
 
 
 ##### Resources:
--Updating HTML Form Elements[https://study.com/academy/lesson/video/updating-html-form-elements-in-javascript-explanation-examples.html!]
--Updating values of form elements [https://stackoverflow.com/questions/6441354/real-time-updating-of-values-on-a-form!]
--Color Pallette Earthy Forest Hues[https://coolors.co/palettes/trending]
+-Updating HTML Form Elements[https://study.com/academy/lesson/video/updating-html-form-elements-in-javascript-explanation-examples.html!]<br>
+-Updating values of form elements [https://stackoverflow.com/questions/6441354/real-time-updating-of-values-on-a-form!]<br>
+-Color Pallette Earthy Forest Hues[https://coolors.co/palettes/trending]<br>
 -Indexes [https://www.w3schools.com/jsref/jsref_index.asp]
