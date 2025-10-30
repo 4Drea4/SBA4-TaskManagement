@@ -50,9 +50,10 @@ addTask.addEventListener("click", (event) => {
       let li = document.createElement("li") ;//push a new li
       li.dataset.index =index;// inside my renderList store space for new element, assign the drop down to the ul progress status 
       
+      const info =document.createElement("span");
        li.textContent = `${item.title}  ${item.progress} ${item.category} ${item.deadline}`; //set the li’s text to the values of the variables
       ul.appendChild(li);// append the li div to the ul div
-  
+        li.appendChild(info);
 
 
     });}
@@ -66,7 +67,7 @@ addTask.addEventListener("click", (event) => {
   const newStatus = e.target.value;
 
   myTasks[index].progress = newStatus; // update the data
-  renderList();                        // refresh the UI
+  renderList();                        // refresh the list
 });
     // adding a removed event listener button
        let erase = document.getElementById("erase");
