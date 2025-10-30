@@ -46,16 +46,28 @@ addTask.addEventListener("click", (event) => {
     let ul = document.getElementById("list"); // get the ul div element from the HTML
       ul.innerHTML =""  ;//clear the list //
 
-      myTasks.forEach(item => {//for each task in the myTask array:
-      let li = document.createElement("li") ;     //push a new li
+      myTasks.forEach((item, index) =>{//for each task in the myTask array:
+      let li = document.createElement("li") ;//push a new li
+      li.dataset.index =index;// inside my renderList store space for new element, assign the drop down to the ul progress status 
+      
        li.textContent = `${item.title}  ${item.progress} ${item.category} ${item.deadline}`; //set the li’s text to the values of the variables
       ul.appendChild(li);// append the li div to the ul div
   
 
-      //Problem: I need to add an active drop-down for each task to update the progress state
-      //Psuedo Code:
 
     });}
+
+    document.getElementById("list").addEventListener("change", (e) => {
+  // only react to our per-task dropdowns
+  if (!e.target.matches(".status-select")) return;
+
+  const li = e.target.closest("li");
+  const index = Number(li.dataset.index);
+  const newStatus = e.target.value;
+
+  myTasks[index].progress = newStatus; // update the data
+  renderList();                        // refresh the UI
+});
     // adding a removed event listener button
        let erase = document.getElementById("erase");
        erase.addEventListener("click", function() {
@@ -68,17 +80,9 @@ addTask.addEventListener("click", (event) => {
             renderList();
         }
 
-    
-    //     //inside my renderList store the status of progress
-    //     //assign the drop down to the ul progress status 
-    //select the element that we used before
-    document.getElementById(progress)
-    select the progress.value 
-    Element.setAttribute // to select the given drop-down
+   
 
-
-
-    //  // overdue implementation if I have time
+    //  playing around with the overdue implementation, if I have time, I will finish
 
     // const today =  Date.now();//timestamp for time in moment
     // const myDate = deadline.value;

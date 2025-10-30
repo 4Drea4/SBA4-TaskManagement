@@ -28,3 +28,8 @@ To solve a lot of the problems I face I utilize:
 MDN| W3schools| My peers| The Help queue | The office hours | Stack overflow| Trying things out even when nothing works.. Then I will go back and reference documents, and older projects as a starting point and still not know how to quite alter them the way they need in order to get them to work.  I would finish my homework assignment.. I worked diligently all day and feel very defeated rn. 
 
 
+##### Resources:
+-Updating HTML Form Elements[https://study.com/academy/lesson/video/updating-html-form-elements-in-javascript-explanation-examples.html!]
+-Updating values of form elements [https://stackoverflow.com/questions/6441354/real-time-updating-of-values-on-a-form!]
+-Color Pallette Earthy Forest Hues[https://coolors.co/palettes/trending]
+-Indexes [https://www.w3schools.com/jsref/jsref_index.asp]
