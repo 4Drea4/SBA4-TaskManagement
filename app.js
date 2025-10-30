@@ -91,11 +91,9 @@ addTask.addEventListener("click", (event) => {
       document.getElementById("list").addEventListener("change", (e) => {
         // only react to our per-task dropdowns
         if (!e.target.matches(".status-select")) return;
-      
         const li = e.target.closest("li");
         const index = Number(li.dataset.index);
         const newStatus = e.target.value;
-      
         myTasks[index].progress = newStatus; // update the data
         renderList();                        // refresh the list
         
@@ -127,7 +125,7 @@ addTask.addEventListener("click", (event) => {
             renderList();
             renderCards();
         }
-        renderCards();
+        
     
   
         //Search 
