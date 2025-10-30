@@ -45,6 +45,7 @@ addTask.addEventListener("click", (event) => {
   function renderList(){
     let ul = document.getElementById("list"); // get the ul div element from the HTML
       ul.innerHTML =""  ;//clear the list //
+
       myTasks.forEach(item => {//for each task in the myTask array:
       let li = document.createElement("li") ;     //push a new li
        li.textContent = `${item.title}  ${item.progress} ${item.category} ${item.deadline}`; //set the li’s text to the values of the variables
@@ -67,10 +68,14 @@ addTask.addEventListener("click", (event) => {
             renderList();
         }
 
-    //display time changes make it editable
-        //inside my renderList store the status of progress
-        //assign the drop down to the ul progress status 
-        document.getElementById("list").addEventListener("change", function) (e)
+    // //display time changes make it editable
+    //     //inside my renderList store the status of progress
+    //     //assign the drop down to the ul progress status 
+    //     document.getElementById("list").addEventListener("change", function) (e) {
+
+    //       if (!e.target.matches)
+
+    //     }
    
 
 

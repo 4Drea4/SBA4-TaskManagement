@@ -4,26 +4,40 @@ body{
     align-items: center;
     gap:1rem;
     flex-direction: column;
-    filter: drop-shadow(offset-x offset-y blur-radius color);
+    
+
 }
 .headings{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #94849B;
 }
 .container {
     display: flex;
     border-radius: 10px;
     font: 1rem;
     align-items: center;
-    width:auto ;
+    width:600px ;
     height: 400px;
     gap:1rem;
     flex-direction: column;
-    filter: drop-shadow(offset-x offset-y blur-radius color);
+    border-shadow: 0 4px 10px ;
+    background-color:#94849B;
 }
 
 .li{
     border-radius: 10px;
     text-decoration: dashed;
+}
+
+.add-task, #erase{
+    border-radius: 10px;
+    color: #2E3532;
+    background-color: #7E9181;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+
 }
