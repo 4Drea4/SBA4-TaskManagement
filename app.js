@@ -102,15 +102,15 @@ addTask.addEventListener("click", (event) => {
         //create a function for filter on the existing 
         //create a button or search a button will need an event listener
 
-        filter.addEventListener('submit', (event) => {
-          event.preventDefault();
-          filterResults();
-      });
+        //filter.addEventListener('submit', (event) => {
+         // event.preventDefault();
+       //   filterResults();
+    //  });
 
 
-         function filterResults(){
-         const 
-    }
+     //    function filterResults(){
+    //     const 
+   // }
         
 
 
