@@ -45,8 +45,11 @@ body{
 .task-title{
    
     border-radius: 10px;
-   
     
+}
+
+.status-select , .progress-state {
+    background-color: #9cad9c;
 }
 
 .task-management-form{
