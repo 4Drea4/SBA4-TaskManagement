@@ -70,7 +70,8 @@ body{
     grid-template-columns: repeat(auto-fill);
 }
 .card{
-    background-color: #7E9181;
+    background-color: #003100;
+    color: #ffffff;
 }
 @media screen and (max-width: 600px){
     .container {
