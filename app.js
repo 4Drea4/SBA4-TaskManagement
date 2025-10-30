@@ -47,18 +47,39 @@ addTask.addEventListener("click", (event) => {
       ul.innerHTML =""  ;//clear the list //
 
       myTasks.forEach((item, index) =>{//for each task in the myTask array:
-      let li = document.createElement("li") ;//push a new li
+      const li = document.createElement("li");//push a new li
       li.dataset.index =index;// inside my renderList store space for new element, assign the drop down to the ul progress status 
-      
-      const info =document.createElement("span");
-       li.textContent = `${item.title}  ${item.progress} ${item.category} ${item.deadline}`; //set the li’s text to the values of the variables
+     
+     //the list
+      const info = document.createElement("span");
+      info.textContent = `${item.title} , ${item.category} , ${item.deadline || ""}`;  
+      li.appendChild(info);
+      // progress drop downs
+      const select = document.createElement(
+        "select");
+        select.className = "status-select";
+      ["not-started" , "in-progress", "finished"].forEach((status)=> {
+        const opt = document.createElement("option");
+        opt.value = status;
+        opt.textContent = status;
+        select.appendChild(opt);
+      });
+
+      //show the progress
+      select.value =item.progress;
+
+       //add li
+      li.appendChild(select);
       ul.appendChild(li);// append the li div to the ul div
-        li.appendChild(info);
+
+
+    
+  
 
 
     });}
 
-    document.getElementById("list").addEventListener("change", (e) => {
+  document.getElementById("list").addEventListener("change", (e) => {
   // only react to our per-task dropdowns
   if (!e.target.matches(".status-select")) return;
 
@@ -69,7 +90,7 @@ addTask.addEventListener("click", (event) => {
   myTasks[index].progress = newStatus; // update the data
   renderList();                        // refresh the list
 });
-    // adding a removed event listener button
+    // adding a removed event listener button for last task
        let erase = document.getElementById("erase");
        erase.addEventListener("click", function() {
         removeLastItem();
