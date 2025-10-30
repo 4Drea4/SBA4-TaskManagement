@@ -35,7 +35,7 @@ MDN| W3schools| My peers| The Help queue | The office hours | Stack overflow| Tr
 
 
 ##### Resources:
--Updating HTML Form Elements[https://study.com/academy/lesson/video/updating-html-form-elements-in-javascript-explanation-examples.html!]<br>
+-Updating HTML Form Elements[https://study.com/academy/lesson/videoupdating-html-form-elements-in-javascript-explanation-examples.html!]<br>
 -Updating values of form elements [https://stackoverflow.com/questions/6441354/real-time-updating-of-values-on-a-form!]<br>
 -Color Pallette Earthy Forest Hues[https://coolors.co/palettes/trending]<br>
--Indexes [https://www.w3schools.com/jsref/jsref_index.asp]
+-Indexes [https://www.w3schools.com/jsref/jsref_index.asp]<br>
