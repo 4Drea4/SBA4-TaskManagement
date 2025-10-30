@@ -2,6 +2,21 @@
 ## Completed by Andrea E 
 ### *Wednesdy October 29, 2025*
 
+
+## Table of Contents
+- [Today's Focus](#todays-focus)
+- [Final Thoughts](#final-thoughts)
+- [Reflection Questions](#reflection-questions)
+- [References](#references)
+
+
+
+
+
+
+
+
+
 *Todays Focus*
 
 <table><tr><td> Ode to a developer:
