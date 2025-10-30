@@ -68,15 +68,13 @@ addTask.addEventListener("click", (event) => {
             renderList();
         }
 
-    // //display time changes make it editable
+    
     //     //inside my renderList store the status of progress
     //     //assign the drop down to the ul progress status 
-    //     document.getElementById("list").addEventListener("change", function) (e) {
-
-    //       if (!e.target.matches)
-
-    //     }
-   
+    //select the element that we used before
+    document.getElementById(progress)
+    select the progress.value 
+    Element.setAttribute // to select the given drop-down
 
 
 
