@@ -84,7 +84,7 @@ addTask.addEventListener("click", (event) => {
         myTasks.forEach(task =>{
           const div = document.createElement("div");
           div.className = "card";
-          div.textContent = `${task.title}  ${task.category}  ${task.deadline || ""}`;
+          div.textContent = `${task.title} ${task.category}  ${task.deadline || ""}`;
           cards.appendChild(div);
         });
       }
