@@ -54,10 +54,11 @@ addTask.addEventListener("click", (event) => {
       const info = document.createElement("span");
       info.textContent = `${item.title} , ${item.category} , ${item.deadline || ""}`;  
       li.appendChild(info);
+
       // progress drop downs
       const select = document.createElement(
         "select");
-        select.className = "status-select";
+      select.className = "status-select";
       ["not-started" , "in-progress", "finished"].forEach((status)=> {
         const opt = document.createElement("option");
         opt.value = status;
@@ -71,43 +72,63 @@ addTask.addEventListener("click", (event) => {
        //add li
       li.appendChild(select);
       ul.appendChild(li);// append the li div to the ul div
+      
+      renderCards();
 
-    });}
+      //function for rendering cards
 
-  document.getElementById("list").addEventListener("change", (e) => {
-  // only react to our per-task dropdowns
-  if (!e.target.matches(".status-select")) return;
+      function renderCards(){
+        const cards = document.getElementById("cards");
+        if (!cards) return;
+        cards.innerHTML = "";
+        myTasks.forEach(task =>{
+          const div = document.createElement("div");
+          div.className = "card";
+          div.textContent = `${task.title}  ${task.category}  ${task.deadline || ""}`;
+          cards.appendChild(div);
+        });
+      }
+      document.getElementById("list").addEventListener("change", (e) => {
+        // only react to our per-task dropdowns
+        if (!e.target.matches(".status-select")) return;
+      
+        const li = e.target.closest("li");
+        const index = Number(li.dataset.index);
+        const newStatus = e.target.value;
+      
+        myTasks[index].progress = newStatus; // update the data
+        renderList();                        // refresh the list
+        
+      });
 
-  const li = e.target.closest("li");
-  const index = Number(li.dataset.index);
-  const newStatus = e.target.value;
+    //   //making tasks go into the cards
+    // const cards = document.getElementById("cards");
+    // cards.innerHTML="";
+    // myTasks.forEach(task =>{
+    //   const div= document.createElement("div");
+    //   div.className ="card";
+    //   div.textContent = `${task.title}  ${task.category}  ${task.deadline}`;
+    //   cards.appendChild(div);
 
-  myTasks[index].progress = newStatus; // update the data
-  renderList();                        // refresh the list
-  renderCards();
-});
+    // });
+    // });}
+
+
     // adding a removed event listener button for last task
        let erase = document.getElementById("erase");
        erase.addEventListener("click", function() {
         removeLastItem();
+        
       });
 
         function removeLastItem(){
             if (myTasks.length === 0) return;
             myTasks.pop();
             renderList();
+            renderCards();
         }
-
-    //making tasks go into the cards
-    const cards = document.getElementById("cards");
-    cards.innerHTML="";
-    myTasks.forEach(task =>{
-      const div= document.createElement("div");
-      div.className ="card";
-      div.textContent = `${task.title}  ${task.category}  ${task.deadline}`;
-      cards.appendChild(div);
-
-    });
+        renderCards();
+    
   
         //Search 
 
