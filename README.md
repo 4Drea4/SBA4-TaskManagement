@@ -5,12 +5,12 @@
 *Todays Focus*
 
 <table><tr><td> Ode to a developer:
-*I wrote a poem to best describe todays experience.* 
-How do you center a div...
-I do not know.. 
-does my code show the tears between the lines... 
-No just the mistakes in my syntax
-today was definitley harder than bootstrap
+I wrote a poem to best describe todays experience.:
+How do you center a div...<br>
+I do not know.. .<br>
+does my code show the tears between the lines... .<br>
+No just the mistakes in my syntax.<br>
+today was definitley harder than bootstrap.<br>
 </td></tr></table> 
 
 

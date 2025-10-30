@@ -2,28 +2,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:1rem;
     flex-direction: column;
     
 
 }
-.headings{
+#headings{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #94849B;
+    color: #dad7cd;
+    font-size: .5rem;
 }
 .container {
     display: flex;
     border-radius: 10px;
-    font: 1rem;
+    font-size: 1rem;
     align-items: center;
     width:600px ;
     height: 400px;
-    gap:1rem;
     flex-direction: column;
-    border-shadow: 0 4px 10px ;
-    background-color:#94849B;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    background-color:#344e41;
+    color:#dad7cd;
 }
 
 .li{
@@ -33,11 +33,33 @@ body{
 
 .add-task, #erase{
     border-radius: 10px;
-    color: #2E3532;
+    color: #588157;
     background-color: #7E9181;
     justify-content: center;
     align-items: center;
     width: 150px;
-    height: 40px;
-
+    height: 35px;
+    color:azure;
 }
+
+.task-title{
+   
+    border-radius: 10px;
+   
+    
+}
+
+.task-management-form{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+
+@media screen and (max-width: 600px){
+    .container {
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        width: 90% ;
+        }
+    }
