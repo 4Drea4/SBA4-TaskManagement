@@ -72,9 +72,9 @@ addTask.addEventListener("click", (event) => {
        //add li
       li.appendChild(select);
       ul.appendChild(li);// append the li div to the ul div
-      
+    });
       renderCards();
-
+  }
       //function for rendering cards
 
       function renderCards(){
