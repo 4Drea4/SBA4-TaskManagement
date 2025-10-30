@@ -5,7 +5,7 @@
 
 ## Table of Contents
 - [Today's Focus](#todays-focus)
-- [Final Thoughts](#final-thoughts)
+- [Final Thoughts](#my-final-thoughts)
 - [Reflection Questions](#reflection-questions)
 - [References](#references)
 
