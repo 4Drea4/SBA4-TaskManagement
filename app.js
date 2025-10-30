@@ -128,13 +128,8 @@ addTask.addEventListener("click", (event) => {
         
     
   
-        //Search 
-        
-
-
-
-
-
+  
+       
    // Filter function:  functionality to filter tasks by category or status
         //Psuedocode :
         //create a function for filter on the existing 
