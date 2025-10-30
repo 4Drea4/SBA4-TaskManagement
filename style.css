@@ -57,6 +57,18 @@ body{
     flex-direction: column;
     gap:2px;
 }
+.search-wrapper{
+    display:flex;
+    flex-direction: column;
+    gap:.25rem;
+    border-color: #588157;
+
+}
+
+.task-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
+}
 
 @media screen and (max-width: 600px){
     .container {
