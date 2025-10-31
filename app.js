@@ -142,22 +142,18 @@ addTask.addEventListener("click", (event) => {
 
 
     //   function filterResults(){
-        const filterResults = tasks.filter.tasks(
-          tasks.entries(myTasks).filter(([key,value])) => typeof value === 'string')
+        const filterResults = document.getElementById("filter");
+         filterResults.addEventListener('input', (event) => {
+          const filterText = filterResults.value.toLowerCase();
+
+         const filterTasks = (myTasks).filter(task => 
+          task.title.toLowerCase().includes(filterText)||
+          task.category.toLowerCase().includes(filterTask)
         );
         console.log(filterResults)
-           //   filterResults(); //calling function
+        renderList(filterTasks);      //   calling function
     //   
-    // event.preventDefault();
-
-        //filter.addEventListener('submit', (event) => {// event listener for button or search
-   // }
-        
-        
-
-
-    //  });
-
+    
 
 
 
