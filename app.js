@@ -132,19 +132,37 @@ addTask.addEventListener("click", (event) => {
        
    // Filter function:  functionality to filter tasks by category or status
         //Psuedocode :
-        //create a function for filter on the existing 
-        //create a button or search a button will need an event listener
+        //create a function for filter on the existing obj
+        //create a button that will need an event listener
 
-        //filter.addEventListener('submit', (event) => {
-         // event.preventDefault();
-       //   filterResults();
+        
+         
+      
+
+
+
+    //   function filterResults(){
+        const filterResults = tasks.filter.tasks(
+          tasks.entries(myTasks).filter(([key,value])) => typeof value === 'string')
+        );
+        console.log(filterResults)
+           //   filterResults(); //calling function
+    //   
+    // event.preventDefault();
+
+        //filter.addEventListener('submit', (event) => {// event listener for button or search
+   // }
+        
+        
+
+
     //  });
 
 
-     //    function filterResults(){
-    //     const 
-   // }
-        
+
+
+
+
 
 
     //  playing around with the overdue implementation, if I have time, I will finish
