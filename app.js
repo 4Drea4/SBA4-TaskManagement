@@ -141,18 +141,18 @@ addTask.addEventListener("click", (event) => {
 
 
 
-    //   function filterResults(){
-        const filterResults = document.getElementById("filter");
-         filterResults.addEventListener('input', (event) => {
-          const filterText = filterResults.value.toLowerCase();
+    // //   function filterResults(){
+    //     const filterResults = document.getElementById("filter");
+    //      filterResults.addEventListener('input', (event) => {
+    //       const filterText = filterResults.value.toLowerCase();
 
-         const filterTasks = (myTasks).filter(task => 
-          task.title.toLowerCase().includes(filterText)||
-          task.category.toLowerCase().includes(filterTask)
-        );
-        console.log(filterResults)
-        renderList(filterTasks);      //   calling function
-    //   
+    //      const filterTasks = (myTasks).filter(task => 
+    //       task.title.toLowerCase().includes(filterText)||
+    //       task.category.toLowerCase().includes(filterTask)
+    //     );
+    //     console.log(filterResults)
+    //     renderList(filterTasks);      //   calling function
+    // //   
     
 
 
