@@ -99,6 +99,8 @@ addTask.addEventListener("click", (event) => {
         
       });
 
+
+
     //   //making tasks go into the cards
     // const cards = document.getElementById("cards");
     // cards.innerHTML="";
@@ -128,6 +130,7 @@ addTask.addEventListener("click", (event) => {
         
     
   
+        
   
        
    // Filter function:  functionality to filter tasks by category or status
