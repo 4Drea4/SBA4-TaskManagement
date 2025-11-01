@@ -49,6 +49,7 @@ addTask.addEventListener("click", (event) => {
       myTasks.forEach((item, index) =>{//for each task in the myTask array:
       const li = document.createElement("li");//push a new li
       li.dataset.index =index;// inside my renderList store space for new element, assign the drop down to the ul progress status 
+      li.innerHTML = `<button type="click" id="toggle-finished" class="toggle-finished">Complete</button>`
      
      //the list
       const info = document.createElement("span");
@@ -99,7 +100,12 @@ addTask.addEventListener("click", (event) => {
         
       });
 
-
+      list.addEventListener('click' , function(event){
+        if (event.target.classList.contains('toggle-finished'))
+          if (myTasks.length === 0) return;
+        myTasks.pop();
+        renderList();
+      });
 
     //   //making tasks go into the cards
     // const cards = document.getElementById("cards");
@@ -130,7 +136,7 @@ addTask.addEventListener("click", (event) => {
         
     
   
-        
+
   
        
    // Filter function:  functionality to filter tasks by category or status
