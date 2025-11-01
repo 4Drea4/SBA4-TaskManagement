@@ -5,6 +5,7 @@ let progress = document.getElementById("progress"); //progress drop-down
 let deadline = document.getElementById("task-due-date");//due-date calendar
 let category = document.getElementById("category-options");//category drop-down
 let addTask= document.getElementById("submitTask");//button
+let list=document.getElementById("list");
 
 //creating variable that is an empty variable
 let myTasks = []
@@ -49,7 +50,8 @@ addTask.addEventListener("click", (event) => {
       myTasks.forEach((item, index) =>{//for each task in the myTask array:
       const li = document.createElement("li");//push a new li
       li.dataset.index =index;// inside my renderList store space for new element, assign the drop down to the ul progress status 
-      li.innerHTML = `<button type="click" id="toggle-finished" class="toggle-finished">Complete</button>`
+      li.innerHTML = `<button type="button" class="toggle-finished">Complete</button>`;
+
      
      //the list
       const info = document.createElement("span");
@@ -96,7 +98,8 @@ addTask.addEventListener("click", (event) => {
         const index = Number(li.dataset.index);
         const newStatus = e.target.value;
         myTasks[index].progress = newStatus; // update the data
-        renderList();                        // refresh the list
+        renderList();  
+      //  overdue();                      // refresh the list
         
       });
 
@@ -109,6 +112,7 @@ addTask.addEventListener("click", (event) => {
         if (Number.isNaN(index)) return;
         myTasks.splice(index, 1);
         renderList();
+      //  overdue();
       });
 
 
@@ -140,6 +144,7 @@ addTask.addEventListener("click", (event) => {
             if (myTasks.length === 0) return;
             myTasks.pop();
             renderList();
+            //overdue();
             // renderCards();
         }
         
@@ -153,13 +158,23 @@ addTask.addEventListener("click", (event) => {
         //create a function for filter on the existing obj
         //create a button that will need an event listener
 
-        
-         
-      
+        // function overdue(){
+        //   let checkDate = new Date();
+        //   checkDate.setHours(0,0,0,0);
+
+        //   myTasks.forEach((task)) =>{
+        //     if (!task.deadline) return;
+        //     const yourLate = new Date(task.deadline);
+
+        //     if (yourDate < today && task.progress !=="finished") 
+        //     {
+        //       console.log('working');
+        //     );
+        //     }
+        //   });
 
 
-
-  
+       
 
 
 
@@ -172,10 +187,7 @@ addTask.addEventListener("click", (event) => {
     // const myDate = deadline.value;
     // const dateConvert =new Date(deadline.value)
     // console.log(dateConvert);
-    //  function overdue(task){
-    //     if (deadline.value < today ){
-    //      console.log("Uh Oh did you mean to change the status of this task?");
-    //      console.log(deadline.value);
+    //  
     
     //     }  };
 
