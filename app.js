@@ -101,9 +101,11 @@ addTask.addEventListener("click", (event) => {
       });
 
       list.addEventListener('click' , function(event){
-        if (event.target.classList.contains('toggle-finished'))
-          if (myTasks.length === 0) return;
-        myTasks.pop();
+        if (event.target.classList.contains('toggle-finished'));
+        if (!li) return;
+        const index = Number(li.dataset.index);
+        if (Number.isNaN(index)) return;
+        myTasks.splice(index, 1);
         renderList();
       });
 

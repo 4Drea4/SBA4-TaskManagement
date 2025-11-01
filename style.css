@@ -74,6 +74,17 @@ body{
     background-color: #003100;
     color: #ffffff;
 }
+
+#toggle-finished{
+    border-radius: 10px;
+    color: #588157;
+    background-color: #7E9181;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    color:azure;
+}
 @media screen and (max-width: 600px){
     .container {
         display: flex;
