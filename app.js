@@ -103,13 +103,18 @@ addTask.addEventListener("click", (event) => {
       list.addEventListener('click' , function(event){
         if (!event.target.classList.contains('toggle-finished')) 
           return;
-        const li =event.targt.closest("li");
+        const li =event.target.closest("li");
         if (!li) return;
         const index = Number(li.dataset.index);
         if (Number.isNaN(index)) return;
         myTasks.splice(index, 1);
         renderList();
       });
+
+
+
+
+
 
     //   //making tasks go into the cards
     // const cards = document.getElementById("cards");
@@ -154,20 +159,7 @@ addTask.addEventListener("click", (event) => {
 
 
 
-    // //   function filterResults(){
-    //     const filterResults = document.getElementById("filter");
-    //      filterResults.addEventListener('input', (event) => {
-    //       const filterText = filterResults.value.toLowerCase();
-
-    //      const filterTasks = (myTasks).filter(task => 
-    //       task.title.toLowerCase().includes(filterText)||
-    //       task.category.toLowerCase().includes(filterTask)
-    //     );
-    //     console.log(filterResults)
-    //     renderList(filterTasks);      //   calling function
-    // //   
-    
-
+  
 
 
 
