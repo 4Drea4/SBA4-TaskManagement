@@ -101,7 +101,9 @@ addTask.addEventListener("click", (event) => {
       });
 
       list.addEventListener('click' , function(event){
-        if (event.target.classList.contains('toggle-finished'));
+        if (!event.target.classList.contains('toggle-finished')) 
+          return;
+        const li =event.targt.closest("li");
         if (!li) return;
         const index = Number(li.dataset.index);
         if (Number.isNaN(index)) return;
